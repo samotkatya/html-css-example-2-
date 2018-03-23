@@ -1,0 +1,42 @@
+html body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.media div{
+    background: #1d1d1d;
+    padding: 40px;
+    color: #ffffff;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+}
+.media2 div{
+    box-sizing: border-box;
+    background: #334455;
+    width: 33,333%;
+    float: left;
+    color: #ffffff;
+    padding: 40px;
+}
+@media all and (max-width: 1200px){
+    .media2 div{
+        float: none;
+        width: 100%;
+    }
+}
+@media all and (min-width: 1200px){
+    .media .div1{
+        display: block;
+    }
+}
+@media all and (max-width: 1199px) and (min-width: 600px){
+    .media .div2{
+        display: block;
+    }
+}
+@media all and (max-width: 599px) {
+    .media .div3{
+        display: block;
+    }
+}
